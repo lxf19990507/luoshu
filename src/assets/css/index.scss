@@ -1,0 +1,2670 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Regular';
+}
+
+// 页面默认颜色
+page{
+	background-color: #F4F4F5;
+}
+
+#app {
+    margin: 0;
+    height: 100%;
+    font-family: "Regular";
+}
+
+span {
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** 清除基础样式
+**/
+fieldset,
+img,
+input,
+button {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+/*去掉input等聚焦时的蓝色边框*/
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+/* 行内元素的垂直居中 */
+/* 
+vertical-align：top 
+*/
+select,
+input {
+    vertical-align: middle;
+}
+
+/*select, input, textarea { font-size:12px; margin:0; }*/
+textarea {
+    resize: none;
+}
+
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*去掉a标签下划线*/
+a {
+    text-decoration: none;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+/* table { border-collapse:collapse; } */
+
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+/* Document
+   ========================================================================== */
+* {
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    /* 1 */
+    line-height: 1.15;
+    /* 2 */
+    -ms-text-size-adjust: 100%;
+    /* 3 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main {
+    /* 1 */
+    display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"],
+/* 1 */
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details,
+/* 1 */
+menu {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+    display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/* flex 布局的定义
+   ========================================================================== */
+
+/* 基础样式 , 从左到右，不压缩子元素，超出则换行排列 */
+.f-base {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+
+/* 基础样式，垂直居中，从左到右排序  会压缩子元素*/
+.f-baseX {
+    display: flex;
+    align-items: center;
+}
+
+/* 基础样式，从上到下排序元素 */
+.f-baseY {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* 横向排列 */
+.f-arrayX {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 纵向排列 */
+.f-arrayY {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+
+/* 上下左右居中 */
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 自动排列，两边不留空余，可配合排列方向决定是横向自动排列还是纵向自动排列 */
+.f-alignNone {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+
+/* 自动排列，两边留有空余，可配合排列方向决定是横向自动排列还是纵向自动排列 */
+.f-align {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+/* 填充剩余空间，不压缩 */
+.ff1 {
+    flex: 1;
+}
+
+/* 不压缩所有子元素 */
+.f-allFull {
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+/* 水平对齐方向 向左对齐 */
+.f-levelL {
+    justify-content: flex-start;
+}
+
+/* 水平对齐方向 居中对齐 */
+
+.f-levelC {
+    justify-content: center;
+}
+
+/* 水平对齐方向 向右对齐 */
+
+.f-levelR {
+    justify-content: flex-end;
+}
+
+/* 控制垂直对齐方式 上对齐 */
+.f-verticalT {
+    align-items: flex-start;
+}
+
+/* 控制垂直对齐方式 居中 */
+
+.f-verticalC {
+    align-items: center;
+}
+
+/* 控制垂直对齐方式 下对齐 */
+
+.f-verticalB {
+    align-items: flex-end;
+}
+
+/* 这个用在子元素，用于分配剩余空间 */
+.f-space {
+    flex-grow: 1;
+}
+
+/* 不压缩子元素，既保留元素的完整大小,应用在元素身上 */
+.f-full {
+    flex-shrink: 0;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.f-textcen {
+    text-align: center;
+}
+
+/* 常用各种基础样式定义
+   ========================================================================== */
+
+/* 宽度 */
+.w0 {
+    width: 0%;
+}
+
+.w5 {
+    width: 5%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w15 {
+    width: 15%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w35 {
+    width: 35%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w45 {
+    width: 45%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w55 {
+    width: 55%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w65 {
+    width: 65%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w85 {
+    width: 85%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w95 {
+    width: 95%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.h10 {
+    height: 10%;
+}
+.h20 {
+    height: 20%;
+}
+.h30 {
+    height: 30%;
+}
+.h40 {
+    height: 40%;
+}
+.h50 {
+    height: 50%;
+}
+.h60 {
+    height: 60%;
+}
+.h70 {
+    height: 70%;
+}
+.h80 {
+    height: 80%;
+}
+.h90 {
+    height: 90%;
+}
+.h100 {
+    height: 100%;
+}
+
+/* ========================================================================== */
+.ml0 {
+    margin-left: 0px;
+}
+
+.ml1 {
+    margin-left: 1px;
+}
+
+.ml2 {
+    margin-left: 2px;
+}
+
+.ml3 {
+    margin-left: 3px;
+}
+
+.ml4 {
+    margin-left: 4px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml6 {
+    margin-left: 6px;
+}
+
+.ml7 {
+    margin-left: 7px;
+}
+
+.ml8 {
+    margin-left: 8px;
+}
+
+.ml9 {
+    margin-left: 9px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml11 {
+    margin-left: 11px;
+}
+
+.ml12 {
+    margin-left: 12px;
+}
+
+.ml13 {
+    margin-left: 13px;
+}
+
+.ml14 {
+    margin-left: 14px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml16 {
+    margin-left: 16px;
+}
+
+.ml17 {
+    margin-left: 17px;
+}
+
+.ml18 {
+    margin-left: 18px;
+}
+
+.ml19 {
+    margin-left: 19px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml21 {
+    margin-left: 21px;
+}
+
+.ml22 {
+    margin-left: 22px;
+}
+
+.ml23 {
+    margin-left: 23px;
+}
+
+.ml24 {
+    margin-left: 24px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+
+.ml26 {
+    margin-left: 26px;
+}
+
+.ml27 {
+    margin-left: 27px;
+}
+
+.ml28 {
+    margin-left: 28px;
+}
+
+.ml29 {
+    margin-left: 29px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml31 {
+    margin-left: 31px;
+}
+
+.ml32 {
+    margin-left: 32px;
+}
+
+.ml33 {
+    margin-left: 33px;
+}
+
+.ml34 {
+    margin-left: 34px;
+}
+
+.ml35 {
+    margin-left: 35px;
+}
+
+.ml36 {
+    margin-left: 36px;
+}
+
+.ml37 {
+    margin-left: 37px;
+}
+
+.ml38 {
+    margin-left: 38px;
+}
+
+.ml39 {
+    margin-left: 39px;
+}
+
+.ml40 {
+    margin-left: 40px;
+}
+
+.ml41 {
+    margin-left: 41px;
+}
+
+.ml42 {
+    margin-left: 42px;
+}
+
+.ml43 {
+    margin-left: 43px;
+}
+
+.ml44 {
+    margin-left: 44px;
+}
+
+.ml45 {
+    margin-left: 45px;
+}
+
+.ml46 {
+    margin-left: 46px;
+}
+
+.ml47 {
+    margin-left: 47px;
+}
+
+.ml48 {
+    margin-left: 48px;
+}
+
+.ml49 {
+    margin-left: 49px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+/* ========================================================================== */
+
+.mr0 {
+    margin-right: 0px;
+}
+
+.mr1 {
+    margin-right: 1px;
+}
+
+.mr2 {
+    margin-right: 2px;
+}
+
+.mr3 {
+    margin-right: 3px;
+}
+
+.mr4 {
+    margin-right: 4px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr6 {
+    margin-right: 6px;
+}
+
+.mr7 {
+    margin-right: 7px;
+}
+
+.mr8 {
+    margin-right: 8px;
+}
+
+.mr9 {
+    margin-right: 9px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr11 {
+    margin-right: 11px;
+}
+
+.mr12 {
+    margin-right: 12px;
+}
+
+.mr13 {
+    margin-right: 13px;
+}
+
+.mr14 {
+    margin-right: 14px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr16 {
+    margin-right: 16px;
+}
+
+.mr17 {
+    margin-right: 17px;
+}
+
+.mr18 {
+    margin-right: 18px;
+}
+
+.mr19 {
+    margin-right: 19px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr21 {
+    margin-right: 21px;
+}
+
+.mr22 {
+    margin-right: 22px;
+}
+
+.mr23 {
+    margin-right: 23px;
+}
+
+.mr24 {
+    margin-right: 24px;
+}
+
+.mr25 {
+    margin-right: 25px;
+}
+
+.mr26 {
+    margin-right: 26px;
+}
+
+.mr27 {
+    margin-right: 27px;
+}
+
+.mr28 {
+    margin-right: 28px;
+}
+
+.mr29 {
+    margin-right: 29px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mr31 {
+    margin-right: 31px;
+}
+
+.mr32 {
+    margin-right: 32px;
+}
+
+.mr33 {
+    margin-right: 33px;
+}
+
+.mr34 {
+    margin-right: 34px;
+}
+
+.mr35 {
+    margin-right: 35px;
+}
+
+.mr36 {
+    margin-right: 36px;
+}
+
+.mr37 {
+    margin-right: 37px;
+}
+
+.mr38 {
+    margin-right: 38px;
+}
+
+.mr39 {
+    margin-right: 39px;
+}
+
+.mr40 {
+    margin-right: 40px;
+}
+
+.mr41 {
+    margin-right: 41px;
+}
+
+.mr42 {
+    margin-right: 42px;
+}
+
+.mr43 {
+    margin-right: 43px;
+}
+
+.mr44 {
+    margin-right: 44px;
+}
+
+.mr45 {
+    margin-right: 45px;
+}
+
+.mr46 {
+    margin-right: 46px;
+}
+
+.mr47 {
+    margin-right: 47px;
+}
+
+.mr48 {
+    margin-right: 48px;
+}
+
+.mr49 {
+    margin-right: 49px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+/* ========================================================================== */
+
+.mt0 {
+    margin-top: 0px;
+}
+
+.mt1 {
+    margin-top: 1px;
+}
+
+.mt2 {
+    margin-top: 2px;
+}
+
+.mt3 {
+    margin-top: 3px;
+}
+
+.mt4 {
+    margin-top: 4px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt6 {
+    margin-top: 6px;
+}
+
+.mt7 {
+    margin-top: 7px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+.mt9 {
+    margin-top: 9px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt11 {
+    margin-top: 11px;
+}
+
+.mt12 {
+    margin-top: 12px;
+}
+
+.mt13 {
+    margin-top: 13px;
+}
+
+.mt14 {
+    margin-top: 14px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt16 {
+    margin-top: 16px;
+}
+
+.mt17 {
+    margin-top: 17px;
+}
+
+.mt18 {
+    margin-top: 18px;
+}
+
+.mt19 {
+    margin-top: 19px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt21 {
+    margin-top: 21px;
+}
+
+.mt22 {
+    margin-top: 22px;
+}
+
+.mt23 {
+    margin-top: 23px;
+}
+
+.mt24 {
+    margin-top: 24px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt26 {
+    margin-top: 26px;
+}
+
+.mt27 {
+    margin-top: 27px;
+}
+
+.mt28 {
+    margin-top: 28px;
+}
+
+.mt29 {
+    margin-top: 29px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt31 {
+    margin-top: 31px;
+}
+
+.mt32 {
+    margin-top: 32px;
+}
+
+.mt33 {
+    margin-top: 33px;
+}
+
+.mt34 {
+    margin-top: 34px;
+}
+
+.mt35 {
+    margin-top: 35px;
+}
+
+.mt36 {
+    margin-top: 36px;
+}
+
+.mt37 {
+    margin-top: 37px;
+}
+
+.mt38 {
+    margin-top: 38px;
+}
+
+.mt39 {
+    margin-top: 39px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt41 {
+    margin-top: 41px;
+}
+
+.mt42 {
+    margin-top: 42px;
+}
+
+.mt43 {
+    margin-top: 43px;
+}
+
+.mt44 {
+    margin-top: 44px;
+}
+
+.mt45 {
+    margin-top: 45px;
+}
+
+.mt46 {
+    margin-top: 46px;
+}
+
+.mt47 {
+    margin-top: 47px;
+}
+
+.mt48 {
+    margin-top: 48px;
+}
+
+.mt49 {
+    margin-top: 49px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+
+/* ========================================================================== */
+
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.mb1 {
+    margin-bottom: 1px;
+}
+
+.mb2 {
+    margin-bottom: 2px;
+}
+
+.mb3 {
+    margin-bottom: 3px;
+}
+
+.mb4 {
+    margin-bottom: 4px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb6 {
+    margin-bottom: 6px;
+}
+
+.mb7 {
+    margin-bottom: 7px;
+}
+
+.mb8 {
+    margin-bottom: 8px;
+}
+
+.mb9 {
+    margin-bottom: 9px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb11 {
+    margin-bottom: 11px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.mb13 {
+    margin-bottom: 13px;
+}
+
+.mb14 {
+    margin-bottom: 14px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.mb17 {
+    margin-bottom: 17px;
+}
+
+.mb18 {
+    margin-bottom: 18px;
+}
+
+.mb19 {
+    margin-bottom: 19px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb21 {
+    margin-bottom: 21px;
+}
+
+.mb22 {
+    margin-bottom: 22px;
+}
+
+.mb23 {
+    margin-bottom: 23px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb26 {
+    margin-bottom: 26px;
+}
+
+.mb27 {
+    margin-bottom: 27px;
+}
+
+.mb28 {
+    margin-bottom: 28px;
+}
+
+.mb29 {
+    margin-bottom: 29px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb31 {
+    margin-bottom: 31px;
+}
+
+.mb32 {
+    margin-bottom: 32px;
+}
+
+.mb33 {
+    margin-bottom: 33px;
+}
+
+.mb34 {
+    margin-bottom: 34px;
+}
+
+.mb35 {
+    margin-bottom: 35px;
+}
+
+.mb36 {
+    margin-bottom: 36px;
+}
+
+.mb37 {
+    margin-bottom: 37px;
+}
+
+.mb38 {
+    margin-bottom: 38px;
+}
+
+.mb39 {
+    margin-bottom: 39px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mb41 {
+    margin-bottom: 41px;
+}
+
+.mb42 {
+    margin-bottom: 42px;
+}
+
+.mb43 {
+    margin-bottom: 43px;
+}
+
+.mb44 {
+    margin-bottom: 44px;
+}
+
+.mb45 {
+    margin-bottom: 45px;
+}
+
+.mb46 {
+    margin-bottom: 46px;
+}
+
+.mb47 {
+    margin-bottom: 47px;
+}
+
+.mb48 {
+    margin-bottom: 48px;
+}
+
+.mb49 {
+    margin-bottom: 49px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+/* ========================================================================== */
+.size10{
+	font-size: 10px;
+}
+.size12 {
+    font-size: 12px;
+}
+
+.size13 {
+    font-size: 13px;
+}
+
+.size14 {
+    font-size: 14px;
+}
+
+.size15 {
+    font-size: 15px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.size17 {
+    font-size: 17px;
+}
+
+.size18 {
+    font-size: 18px;
+}
+
+.size19 {
+    font-size: 19px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.size21 {
+    font-size: 21px;
+}
+
+.size22 {
+    font-size: 22px;
+}
+
+.size23 {
+    font-size: 23px;
+}
+
+.size24 {
+    font-size: 24px;
+}
+
+.size25 {
+    font-size: 25px;
+}
+
+.size26 {
+    font-size: 26px;
+}
+
+.size27 {
+    font-size: 27px;
+}
+
+.size28 {
+    font-size: 28px;
+}
+
+.size29 {
+    font-size: 29px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size31 {
+    font-size: 31px;
+}
+
+.size32 {
+    font-size: 32px;
+}
+
+.size33 {
+    font-size: 33px;
+}
+
+.size34 {
+    font-size: 34px;
+}
+
+.size35 {
+    font-size: 35px;
+}
+
+.size36 {
+    font-size: 36px;
+}
+
+.size37 {
+    font-size: 37px;
+}
+
+.size38 {
+    font-size: 38px;
+}
+
+.size39 {
+    font-size: 39px;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.size41 {
+    font-size: 41px;
+}
+
+.size42 {
+    font-size: 42px;
+}
+
+.size43 {
+    font-size: 43px;
+}
+
+.size44 {
+    font-size: 44px;
+}
+
+.size45 {
+    font-size: 45px;
+}
+
+.size46 {
+    font-size: 46px;
+}
+
+.size47 {
+    font-size: 47px;
+}
+
+.size48 {
+    font-size: 48px;
+}
+
+.size49 {
+    font-size: 49px;
+}
+
+.size50 {
+    font-size: 50px;
+}
+
+/* ========================================================================== */
+/*字体粗细*/
+.fw600{
+	font-weight: 600;
+}
+
+.fw400{
+	font-weight: 400;
+}
+
+.fw700{
+	font-weight: 700;
+}
+
+/* ========================================================================== */
+/*字体*/
+.ffa{
+	font-family: PingFangSC-Regular;
+}
+
+/* ========================================================================== */
+.svg0 {
+    width: 0px!important;
+    height: 0px!important;
+}
+
+.svg1 {
+    width: 1px!important;
+    height: 1px!important;
+}
+
+.svg2 {
+    width: 2px!important;
+    height: 2px!important;
+}
+
+.svg3 {
+    width: 3px!important;
+    height: 3px!important;
+}
+
+.svg4 {
+    width: 4px!important;
+    height: 4px!important;
+}
+
+.svg5 {
+    width: 5px!important;
+    height: 5px!important;
+}
+
+.svg6 {
+    width: 6px!important;
+    height: 6px!important;
+}
+
+.svg7 {
+    width: 7px!important;
+    height: 7px!important;
+}
+
+.svg8 {
+    width: 8px!important;
+    height: 8px!important;
+}
+
+.svg9 {
+    width: 9px!important;
+    height: 9px!important;
+}
+
+.svg10 {
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.svg11 {
+    width: 11px!important;
+    height: 11px!important;
+}
+
+.svg12 {
+    width: 12px!important;
+    height: 12px!important;
+}
+
+.svg13 {
+    width: 13px!important;
+    height: 13px!important;
+}
+
+.svg14 {
+    width: 14px!important;
+    height: 14px!important;
+}
+
+.svg15 {
+    width: 15px!important;
+    height: 15px!important;
+}
+
+.svg16 {
+    width: 16px!important;
+    height: 16px!important;
+}
+
+.svg17 {
+    width: 17px!important;
+    height: 17px!important;
+}
+
+.svg18 {
+    width: 18px!important;
+    height: 18px!important;
+}
+
+.svg19 {
+    width: 19px!important;
+    height: 19px!important;
+}
+
+.svg20 {
+    width: 20px!important;
+    height: 20px!important;
+}
+
+.svg21 {
+    width: 21px!important;
+    height: 21px!important;
+}
+
+.svg22 {
+    width: 22px!important;
+    height: 22px!important;
+}
+
+.svg23 {
+    width: 23px!important;
+    height: 23px!important;
+}
+
+.svg24 {
+    width: 24px!important;
+    height: 24px!important;
+}
+
+.svg25 {
+    width: 25px!important;
+    height: 25px!important;
+}
+
+.svg26 {
+    width: 26px!important;
+    height: 26px!important;
+}
+
+.svg27 {
+    width: 27px!important;
+    height: 27px!important;
+}
+
+.svg28 {
+    width: 28px!important;
+    height: 28px!important;
+}
+
+.svg29 {
+    width: 29px!important;
+    height: 29px!important;
+}
+
+.svg30 {
+    width: 30px!important;
+    height: 30px!important;
+}
+
+.svg31 {
+    width: 31px!important;
+    height: 31px!important;
+}
+
+.svg32 {
+    width: 32px!important;
+    height: 32px!important;
+}
+
+.svg33 {
+    width: 33px!important;
+    height: 33px!important;
+}
+
+.svg34 {
+    width: 34px!important;
+    height: 34px!important;
+}
+
+.svg35 {
+    width: 35px!important;
+    height: 35px!important;
+}
+
+.svg36 {
+    width: 36px!important;
+    height: 36px!important;
+}
+
+.svg37 {
+    width: 37px!important;
+    height: 37px!important;
+}
+
+.svg38 {
+    width: 38px!important;
+    height: 38px!important;
+}
+
+.svg39 {
+    width: 39px!important;
+    height: 39px!important;
+}
+
+.svg40 {
+    width: 40px!important;
+    height: 40px!important;
+}
+
+.svg41 {
+    width: 41px!important;
+    height: 41px!important;
+}
+
+.svg42 {
+    width: 42px!important;
+    height: 42px!important;
+}
+
+.svg43 {
+    width: 43px!important;
+    height: 43px!important;
+}
+
+.svg44 {
+    width: 44px!important;
+    height: 44px!important;
+}
+
+.svg45 {
+    width: 45px!important;
+    height: 45px!important;
+}
+
+.svg46 {
+    width: 46px!important;
+    height: 46px!important;
+}
+
+.svg47 {
+    width: 47px!important;
+    height: 47px!important;
+}
+
+.svg48 {
+    width: 48px!important;
+    height: 48px!important;
+}
+
+.svg49 {
+    width: 49px!important;
+    height: 49px!important;
+}
+
+.svg50 {
+    width: 50px!important;
+    height: 50px!important;
+}
+
+.plr0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.plr1 {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.plr2 {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.plr3 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.plr4 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.plr5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.plr6 {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.plr7 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.plr8 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.plr9 {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.plr10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.plr11 {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.plr12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.plr13 {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.plr14 {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.plr15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.plr16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.plr17 {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.plr18 {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.plr19 {
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.plr20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.plr21 {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.plr22 {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.plr23 {
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.plr24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.plr25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.plr26 {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.plr27 {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.plr28 {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+.plr29 {
+    padding-left: 29px;
+    padding-right: 29px;
+}
+
+.plr30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.plr31 {
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.plr32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.plr33 {
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.plr34 {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.plr35 {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.plr36 {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.plr37 {
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.plr38 {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.plr39 {
+    padding-left: 39px;
+    padding-right: 39px;
+}
+
+.plr40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.plr41 {
+    padding-left: 41px;
+    padding-right: 41px;
+}
+
+.plr42 {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.plr43 {
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+.plr44 {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.plr45 {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.plr46 {
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.plr47 {
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.plr48 {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.plr49 {
+    padding-left: 49px;
+    padding-right: 49px;
+}
+
+.plr50 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ptb0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.ptb1 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.ptb2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ptb3 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.ptb4 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.ptb5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ptb6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.ptb7 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.ptb8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.ptb9 {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.ptb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ptb11 {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.ptb12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ptb13 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.ptb14 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.ptb15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ptb16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ptb17 {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.ptb18 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.ptb19 {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.ptb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ptb21 {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.ptb22 {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.ptb23 {
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.ptb24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.ptb25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.ptb26 {
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.ptb27 {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.ptb28 {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.ptb29 {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+
+.ptb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.ptb31 {
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.ptb32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.ptb33 {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.ptb34 {
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.ptb35 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.ptb36 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.ptb37 {
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.ptb38 {
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+.ptb39 {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
+.ptb40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ptb41 {
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+
+.ptb42 {
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.ptb43 {
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+.ptb44 {
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.ptb45 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.ptb46 {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.ptb47 {
+    padding-top: 47px;
+    padding-bottom: 47px;
+}
+
+.ptb48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.ptb49 {
+    padding-top: 49px;
+    padding-bottom: 49px;
+}
+
+.ptb50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* ========================================================================== */
+/*对齐方式*/
+.tal {
+    text-align: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* ========================================================================== */
+/*背景颜色*/
+.bg1 {
+    background-color: red;
+}
+
+.bg2 {
+    background-color: #0000FF;
+}
+
+.bg3 {
+    background-color: #00FFFF;
+}
+
+.bg4 {
+	background-color: #FFFFFF;
+}
+
+/* ========================================================================== */
+/*字体颜色*/
+.color1{
+	color:#FFFFFF;
+}
+.color2{
+	color: #141615;
+}
+
+
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+.nowrapAll{
+	white-space: nowrap;
+}
+.g-inline{
+	display: inline-block;
+}
+.inline-block{
+	display: inline-block;
+}
+
+
+
+.bs{
+	box-shadow: 0px 2px 4px 0px rgba(202,203,204,1);
+}
